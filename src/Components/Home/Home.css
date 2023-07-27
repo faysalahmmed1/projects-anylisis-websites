@@ -1,0 +1,57 @@
+.Home-container {
+
+    display: flex;
+    grid-template-columns: fr2 fr5;
+   
+
+}
+.img{
+    width: 800px;
+    height: 500px;
+    margin-right: 100px;
+}
+
+.first-container {
+    background-color: rgba(255, 255, 255, 0.998);
+    margin-right: 200px;
+    margin-left: 50px;
+
+
+}
+
+.best-tShirt {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.name {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.t-Shirt {
+    color: red;
+}
+
+.live-demo {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.Customer-reviews{
+    font-size: 50px;
+    color: rgb(103, 84, 7)
+}
+.See-all-review {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.TShirt-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}

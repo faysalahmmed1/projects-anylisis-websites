@@ -1,0 +1,18 @@
+.t-Shirt-style{
+    height: 300px;
+    border: solid rgb(132, 30, 242) 2px;
+    border-radius: 15px;
+    margin: 20px;
+    margin-bottom: 20px;
+
+}.t-Shirt-style img{
+    border-radius: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+.comment{
+    text-align: center;
+}
