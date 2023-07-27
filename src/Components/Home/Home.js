@@ -3,10 +3,17 @@ import Logo from '../../logo.svg'
 import './Home.css';
 import useTShirt from '../../hooks/useTshirt';
 import TShirt from '../TShirt/TShirt';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
 
-    const [tShirts, setTShirts] =useTShirt();
+    const [tShirts, setTShirts] = useTShirt();
+
+    const navigate = useNavigate();
+    const SeeAllReviews =()=>{
+        navigate('/Reviews')
+
+    }
 
     return (
         <div >
@@ -24,38 +31,24 @@ const Home = () => {
                     </div>
                 </nav>
             </section>
-            
+
 
             <section>
 
                 <div>
                     <h1 className='Customer-reviews'>Customer Reviews(3)</h1>
                     <div className='TShirt-container'>
-                    {
-                        tShirts.map(tShirt =><TShirt
-                            key={tShirt._id}
-                            tShirt={tShirt}
+                        {
+                            tShirts.map(tShirt => <TShirt
+                                key={tShirt._id}
+                                tShirt={tShirt}
 
                             ></TShirt>)
-                    }
-                    
+                        }
 
                     </div>
 
-                    <div className='cart-container'>
-                    
-
-                    </div>
-
-
-
-
-
-
-
-
-
-                    <button className='See-all-review'>See all Review</button>
+                    <button className='See-all-review' onClick={SeeAllReviews}>See All Review</button>
                 </div>
 
             </section>
