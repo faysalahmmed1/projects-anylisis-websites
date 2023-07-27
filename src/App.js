@@ -19,7 +19,7 @@ function App() {
         <Route path='/Dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/Blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/About' element={<About></About>}></Route>
-        <Route path= "*" element={<NotFound></NotFound>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
 
 
       </Routes>
