@@ -7,7 +7,7 @@ const About = () => {
             <h1>Welcome</h1>
             <h3>Welcome to the T-Shirt Bazaar website About webpage. Here, we will take you through a comprehensive explanation of our T-Shirt Bazaar platform, giving you an insight into our mission, values, and the passion that drives us.</h3>
             <br />
-            
+
             <p>
 
                 Introduction:

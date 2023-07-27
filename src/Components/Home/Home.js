@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../logo.svg'
+import img from '../../img/t-shirt.jpg'
 import './Home.css';
 import useTShirt from '../../hooks/useTshirt';
 import TShirt from '../TShirt/TShirt';
@@ -17,8 +17,8 @@ const Home = () => {
 
     return (
         <div >
-            <section>
-                <nav className='Home-container'>
+            <section className='Home-container'>
+                
                     <div className='first-container'>
                         <h1 className='best-tShirt'>Best T-Shirt</h1>
                         <h1 className='name'>Choices Your <span className='t-Shirt'>T-Shirt</span> !!</h1>
@@ -26,10 +26,10 @@ const Home = () => {
 
                         <button className='live-demo'>See More</button>
                     </div>
-                    <div className='img'>
-                        <img src={Logo} alt="" />
+                    <div>
+                        <img src={img} alt="" />
                     </div>
-                </nav>
+                  
             </section>
 
 

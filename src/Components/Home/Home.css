@@ -1,9 +1,7 @@
 .Home-container {
-
     display: flex;
     grid-template-columns: fr2 fr5;
-   
-
+    margin-top: 60px;
 }
 .img{
     width: 800px;
