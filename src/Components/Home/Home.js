@@ -6,7 +6,7 @@ import TShirt from '../TShirt/TShirt';
 
 const Home = () => {
 
-    const [tShirts, setTShirts] = useTShirt();
+    const [tShirts, setTShirts] =useTShirt();
 
     return (
         <div >
@@ -17,33 +17,33 @@ const Home = () => {
                         <h1 className='name'>Choices Your <span className='t-Shirt'>T-Shirt</span> !!</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad assumenda sed deleniti aut? Modi molestiae voluptatem illum qui culpa sed eligendi ipsa doloribus! Maiores asperiores architecto aspernatur vel blanditiis aliquid quia fugiat ducimus est. Quod commodi quaerat facilis! Reiciendis, corrupti.</p>
 
-                        <button className='live-demo'>Live demo</button>
+                        <button className='live-demo'>See More</button>
                     </div>
                     <div className='img'>
                         <img src={Logo} alt="" />
                     </div>
                 </nav>
             </section>
-
+            
 
             <section>
 
                 <div>
                     <h1 className='Customer-reviews'>Customer Reviews(3)</h1>
                     <div className='TShirt-container'>
-                        {
-                            tShirts.map(tShirt => <TShirt
-                                key={tShirt._id}
-                                tShirt={tShirt}
+                    {
+                        tShirts.map(tShirt =><TShirt
+                            key={tShirt._id}
+                            tShirt={tShirt}
 
                             ></TShirt>)
-                        }
-
+                    }
+                    
 
                     </div>
 
                     <div className='cart-container'>
-
+                    
 
                     </div>
 
